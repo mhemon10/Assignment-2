@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Shared styles */
+.display-flex {
+    display: flex;
+}
+
+.color-1 {
+    color: lightseagreen;
+}
+
+.color-2 {
+    color: blue;
+}
+
+.color-3 {
+    color: skyblue;
+}
+
+.color-4 {
+    color: purple;
+}
+
+/* Header Section Decoration */
+.nav {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-head .header-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: orange; /* Highlighted color when hovering */
+}
+
+.nav-btn .btn {
+    width: 150px;
+    padding: 10px 20px;
+    color: white;
+    background-color: orange;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.nav-btn .btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid orange;
+}
+
+.hero-sec {
+    max-width: 1850px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-title {
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+.header-spn1 {
+    color: orange;
+}
+
+.header-spn2 {
+    color: #01ACFD;
+}
+
+.header-dis {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header-btn {
+    width: 150px;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.header-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .items {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+    }
+
+    .hero-sec {
+        flex-direction: column-reverse;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header-title {
+        font-size: 2.5rem;
+        margin-top: 20px; 
+    }
+
+    .header-dis {
+        font-size: 1rem;
+    }
+
+    .header-btn {
+        width: 100%;
+    }
+
+    .header-img {
+        width: 100%;
+        max-width: 300px; 
+        margin-bottom: 20px; 
+    }
+}
+
