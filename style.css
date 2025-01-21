@@ -206,12 +206,13 @@ main{
 }
 
 .sta-conte{
-    max-width: 1160px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    gap: 120px;
 }
 .sta-title{
     font-weight: bold;
@@ -277,6 +278,88 @@ main{
     margin: 0 auto;
     text-align: center;
 }
+/* Footer decoration */
+footer {
+    max-width: 100%;
+    height: 400px; /* Full width */
+    background-color: #01ACFD; /* Blue background */
+    color: white;
+    padding: 50px 0; /* Top and bottom padding */
+}
+
+.foot-container {
+    width: 80%; /* Responsive width */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: space-between; /* Equal spacing between sections */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.footer-content {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center; /* Vertically align logo and heading */
+    gap: 15px; /* Add space between logo and heading */
+}
+
+.foot-logo {
+    width: 60px;
+    height:80px;
+    background-color: white; /* Adjust size for the logo */
+}
+
+.footer-h {
+    font-size: 28px; /* Size for the heading */
+    font-weight: bold;
+    margin-bottom: 30px; 
+}
+
+
+.footer-p p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0 0; /* Add spacing after heading */
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align:start; /* Center align links */
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+.list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.list li a:hover {
+    text-decoration: underline; /* Add underline effect */
+}
+
+.footer-content img {
+    width: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.footer-content img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    transition: 0.3s ease;
+}
+
+
+
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .nav {
@@ -351,22 +434,47 @@ main{
     .btn-sta-1,
     .btn-sta-2,
     .btn-sta-3 {
-        font-size: 0.85rem; /* Reduce button text size */
-        width: 100%;        /* Make buttons full-width */
+        font-size: 0.85rem; 
+        width: 100%;        
         text-align: center;
     }
 
     .btn-con {
-        justify-content: center; /* Center align the navigation buttons */
-        gap: 10px; /* Add spacing between buttons */
+        /* justify-content: center; 
+        gap: 10px;  */
+        display: none;
     }
 
     .btn-arr-2 {
-        width: 50px;   /* Smaller buttons for navigation */
+        /* width: 50px;   
         height: 50px;
         font-size: 1.5rem;
-        margin-right: 5px;
+        margin-right: 5px; */
+        display: none;
     }
+
+    .footer-h {
+        font-size: 22px; /* Reduce heading size for smaller screens */
+    }
+
+    .foot-logo {
+        width: 50px; /* Reduce logo size */
+    }
+
+    .footer-p p {
+        font-size: 12px; /* Reduce paragraph font size */
+    }
+
+    .footer-content img {
+        width: 25px; /* Reduce icon size */
+    }
+
+
+
+
+
+
 }
+
 
 
