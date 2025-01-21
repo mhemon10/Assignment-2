@@ -32,6 +32,11 @@
 .color-4 {
     color: purple;
 }
+main{
+    background: url(assets/bg.png);
+    
+    
+}
 
 /* Header Section Decoration */
 .nav {
@@ -150,7 +155,128 @@
     border: 1px solid black;
 }
 
+/* Standard Curriculum  */
 
+.sta-h{
+    margin-top: 100px;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.sta-curr{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.sat-1{
+    height: 480px;
+    width: 367px;
+    background: linear-gradient(#DEF5FF,#ffff,#ffff,#ffff);
+    padding: 40px;
+    margin: 15px;
+    border-radius: 18px;
+    box-shadow:0px 6px 50px 0px rgba(0, 0, 0, 0.11);
+
+}
+
+
+.sta-2{
+    height: 480px;
+    width: 367px;
+    background: linear-gradient( #FFF4DC,#ffff,#ffff,#ffff);
+    padding: 40px;
+    margin: 15px;
+    border-radius: 18px;
+    box-shadow:0px 6px 50px 0px rgba(0, 0, 0, 0.11);
+
+}
+
+.sta-3{
+
+    height: 480px;
+    width: 367px;
+    background: linear-gradient(#F2E8FF,#ffff,#ffff,#ffff);
+    padding: 40px;
+    margin: 15px;
+    border-radius: 18px;
+    box-shadow:0px 6px 50px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sta-conte{
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.sta-title{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.sta-dis-1{
+    line-height: 20px;
+    color: #808080;
+    margin-bottom: 20px;
+}
+
+.btn-sta-1{
+    border: none;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: blue;
+    cursor: pointer;
+
+}
+
+.btn-sta-3{
+    border: none;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: purple;
+    cursor: pointer;
+
+}
+.btn-sta-2{
+    border: none;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: orange;
+    cursor: pointer;
+}
+
+.btn-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btn-arr-2{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: orange;
+    border: none;
+    color: white;
+    font-weight: 900;
+    margin-right: 10px;
+    margin-bottom: 50px;
+
+}
+.Our-storys{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+}
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .nav {
@@ -200,5 +326,47 @@
         max-width: 300px; 
         margin-bottom: 20px; 
     }
+
+    .sta-conte {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;   /* Center align the cards */
+        margin-top: 20px; 
+    }
+
+    .sat-1,
+    .sta-2,
+    .sta-3 {
+        width: 90%; /* Make the cards responsive with a smaller width */
+        margin-bottom: 20px; /* Add spacing between cards */
+    }
+
+    .sta-title {
+        font-size: 1.2rem; /* Adjust text size for mobile */
+    }
+
+    .sta-dis-1 {
+        font-size: 0.9rem; /* Smaller text for better readability */
+    }
+
+    .btn-sta-1,
+    .btn-sta-2,
+    .btn-sta-3 {
+        font-size: 0.85rem; /* Reduce button text size */
+        width: 100%;        /* Make buttons full-width */
+        text-align: center;
+    }
+
+    .btn-con {
+        justify-content: center; /* Center align the navigation buttons */
+        gap: 10px; /* Add spacing between buttons */
+    }
+
+    .btn-arr-2 {
+        width: 50px;   /* Smaller buttons for navigation */
+        height: 50px;
+        font-size: 1.5rem;
+        margin-right: 5px;
+    }
 }
+
 
