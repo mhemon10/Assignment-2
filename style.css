@@ -37,6 +37,21 @@ main{
     
     
 }
+.scrolling-cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background:#FFF4DC;
+    /* margin-top:5px; */
+    padding: 5px;
+}
+.hr{
+    display: none;
+    border: none;
+    height: 1px;
+    background-color: orange;
+    margin-bottom: 5px;
+}
 
 /* Header Section Decoration */
 .nav {
@@ -211,7 +226,7 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     gap: 120px;
 }
 .sta-title{
@@ -270,29 +285,32 @@ main{
     color: white;
     font-weight: 900;
     margin-right: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
 }
 .Our-storys{
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
+
 /* Footer decoration */
 footer {
     max-width: 100%;
-    height: 400px; /* Full width */
-    background-color: #01ACFD; /* Blue background */
+    height: 400px; 
+    background-color: #01ACFD; 
     color: white;
-    padding: 50px 0; /* Top and bottom padding */
+    padding: 50px 0; 
 }
 
 .foot-container {
-    width: 80%; /* Responsive width */
-    margin: 0 auto; /* Center the container */
+    width: 80%; 
+    margin: 0 auto; 
     display: flex;
-    justify-content: space-between; /* Equal spacing between sections */
-    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between; 
+    align-items: flex-start; 
 }
 
 .footer-content {
@@ -302,18 +320,18 @@ footer {
 
 .footer-logo-container {
     display: flex;
-    align-items: center; /* Vertically align logo and heading */
-    gap: 15px; /* Add space between logo and heading */
+    align-items: center; 
+    gap: 10px; 
 }
 
 .foot-logo {
-    width: 60px;
-    height:80px;
-    background-color: white; /* Adjust size for the logo */
+    width: 80px;
+    height:70px;
+    
 }
 
 .footer-h {
-    font-size: 28px; /* Size for the heading */
+    font-size: 28px; 
     font-weight: bold;
     margin-bottom: 30px; 
 }
@@ -322,14 +340,14 @@ footer {
 .footer-p p {
     font-size: 14px;
     line-height: 1.6;
-    margin: 10px 0 0; /* Add spacing after heading */
+    margin: 10px 0 0; 
 }
 
 .list {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align:start; /* Center align links */
+    text-align:start; 
 }
 
 .list li {
@@ -343,7 +361,7 @@ footer {
 }
 
 .list li a:hover {
-    text-decoration: underline; /* Add underline effect */
+    text-decoration: underline; 
 }
 
 .footer-content img {
@@ -361,14 +379,17 @@ footer {
 
 
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .nav {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
     }
-
+    .hr{
+        display: block;
+        
+    }
     .items {
         display: none;
     }
@@ -383,6 +404,7 @@ footer {
 
     .nav-icon {
         display: block;
+        
     }
 
     .hero-sec {
@@ -394,6 +416,10 @@ footer {
     .header-title {
         font-size: 2.5rem;
         margin-top: 20px; 
+        
+    }
+    .header-text{
+        display: none;
     }
 
     .header-dis {
@@ -411,24 +437,29 @@ footer {
     }
 
     .sta-conte {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center;   /* Center align the cards */
+        flex-direction: column; 
+        align-items: center;   
         margin-top: 20px; 
+        margin-bottom: 0;
+        gap: 0px;
+        
     }
 
     .sat-1,
     .sta-2,
     .sta-3 {
-        width: 90%; /* Make the cards responsive with a smaller width */
-        margin-bottom: 20px; /* Add spacing between cards */
+        width: 90%; 
+        margin-bottom: 20px; 
+        
+        
     }
 
     .sta-title {
-        font-size: 1.2rem; /* Adjust text size for mobile */
+        font-size: 1.2rem; 
     }
 
     .sta-dis-1 {
-        font-size: 0.9rem; /* Smaller text for better readability */
+        font-size: 0.9rem; 
     }
 
     .btn-sta-1,
@@ -454,7 +485,7 @@ footer {
     }
 
     .footer-h {
-        font-size: 22px; /* Reduce heading size for smaller screens */
+        font-size: 20px; /* Reduce heading size for smaller screens */
     }
 
     .foot-logo {
